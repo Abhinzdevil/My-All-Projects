@@ -1,0 +1,315 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #b923d0, #52a4c0, #5f0233);
+    transition: background 0.6s ease;
+}
+
+
+.container {
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(1, 1, 1);
+    font-size: 36px;    
+}
+
+p {
+    color: rgb(2, 27, 2);
+    font-size: 25px;
+}
+
+img {
+    border: 3px solid black;
+    margin-top: 10px;
+    border-radius:20px;
+    width: 80%;
+    height: auto;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.25);
+    backdrop-filter: blur(10px);
+
+    color: white;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-logo img {
+    width: 35px;
+    height: 35px;
+    border-radius: 20px; 
+}
+
+
+.nav-links a {
+    margin-left: 25px;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(10px);
+
+    padding: 20px;
+    transition: 0.3s;
+    z-index: 2000;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+.close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;       
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background: rgba(0,0,0,0.85);
+    padding: 20px;
+    transition: 0.3s;
+    z-index: 2000;
+
+    box-sizing: border-box; 
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+#colorBtn {
+    
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #3bd27f;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+#colorBtn:hover {
+    background-color: #36a76c;
+}
+
+#users {
+    margin-top: 20px;
+}
+
+#users {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;         
+    justify-content: center;  
+    gap: 20px;                
+}
+.user {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    width: 250px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.user:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.user h3 {
+    margin: 0;
+    color: #333;
+}
+
+.user p {
+    margin: 5px 0;
+    color: #ffffff; 
+    font-size: 14px;
+}
+
+
+#loadBtn{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #4287f5;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form {
+    margin-top: 30px;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #5563c1;
+}
+.layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+}
+
+.container {
+    flex: 2;   
+}
+
+.form-box {
+    flex: 1;   /* right side smaller */
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 20px;
+}
+.form-box {
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.form-inner {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.form-left {
+    flex: 1;
+}
+
+.form-right {
+    flex: 1;
+    text-align: center;
+}
+
+.form-right img {
+    width: 100%;
+    max-width: 250px;
+}
+
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+        color: red;
+    }
+
+    p {
+        font-size: 14px;
+    }
+    
+    body {
+        background-color: lightyellow;
+    }
+}
+
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+    }
+    
+    .form-box {
+        position: relative;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-inner {
+        flex-direction: column;
+    }
+    
+    .form-right img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
